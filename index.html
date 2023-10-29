@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Fontaweseome js script to easily import consistant icons thorughout the website -->
     <script src="https://kit.fontawesome.com/3eec41e888.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
@@ -28,20 +29,22 @@
                 <a href="connect.html">Connect</a>
             </li>
         </ul>
+
     </nav>
 
 
     <!-- Landing page contents -->
     <!-- Include: image of me, short description of who I am and what I provide (design and development) -->
-    <div class="contentContainer">
+    <div class="indexContainer">
         <div id="landingImgContainer">
-            <img id="imgPortrait" src="/img/angela.jpg" alt="Portrait of author of website" style="width: 600px;"> 
+            <img id="imgPortrait" src="/img/angela.jpg" alt="Portrait of author of website" style="width: 650px;"> 
         </div>
         <div id="landingInfo">
             <h1>Nice to meet you!</h1>
-            <p>I'm Angela Truong</p>
-            <p>UX/UI Designer and Developer</p>
-            <p>I aspire to unite empathetic human-centered design with future emerging technologies.</p>
+            <p>I'm Angela Truong. <br>
+            UX/UI Designer and Developer. <br>
+            I aspire to unite empathetic human-centered design <br> with future emerging technologies.
+            </p>
         </div>
     </div>
 
@@ -49,11 +52,13 @@
     <!-- Footer -->
     <!-- Include socials link: FB, LinkedIn, Insta, UXFolio -->
     <footer>
+        <p>Shoot me a message!</p>
         <div class="footerIcons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
+            <!-- Using the Fontawesome tag to import brand icons within anchor tags -->
+            <a href="https://www.facebook.com/angle314" class="fa-brands fa-facebook fa-xl"></a>
+            <a href="https://www.instagram.com/angle.tru/" class="fa-brands fa-instagram fa-xl"></a>
+            <a href="https://www.linkedin.com/in/angelatru/" class="fa-brands fa-linkedin fa-xl"></a>
+            <a href="https://github.com/angelatru" class="fa-brands fa-github fa-xl"></a>
         </div>
     </footer>
 

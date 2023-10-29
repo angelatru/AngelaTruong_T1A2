@@ -1,10 +1,14 @@
-// Unviersal styling
+// Unviersal styling -----
 * {
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
-// Import fonts
+body {
+    margin: 0;
+    height: 100%;
+}
+
+// Import fonts ----
 
 // Headings - Cormorant Upright (med, semibold, bold)
     //font-family: 'Cormorant Upright', serif;
@@ -53,26 +57,26 @@ p, ul {
 
 // Body elements  ----
 
-.contentContainer {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
 a {
     text-decoration: none;
 }
 
+
 // Nav elements ----
 
 .navbar {
-    background-color: rgb(206, 231, 253);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .navLinks {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     li {
         margin: 10px 30px;
@@ -80,9 +84,110 @@ a {
     
 }
 
+@media screen and (max-width: 1000px) {
+    ul {
+        font-size: 1em;
+    }
+}
+
+// Hide nav when viewport is narrow
+@media screen and (max-width: 650px) {
+    .navLinks {
+        flex-direction: column;
+
+        li {
+            margin: 5px;
+        }
+    }
+}
+
 // Index HTML elements ----
 
+.indexContainer {
+    padding: 30px;
+    min-height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingInfo {
+    p {
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+    h1 {
+        margin-bottom: -10px;
+    }
+}
+
+// Index mobile
+@media screen and (max-width: 1000px) {
+    .indexContainer{
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+    #landingInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: -5px 0px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #imgPortrait {
+        width: 500px;
+    }
+
+    #landingInfo {
+        h1 {
+            font-size: 2.5em;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+}
+
+
 #imgPortrait {
-    clip-path: circle(35%);
+    max-width: 100%;
+    clip-path: circle(37%);
+}
+
+
+// Footer elements ----
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 0.9em;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    a {
+        margin: 20px 30px 60px;
+    }
+}
+
+// Footer mobile
+@media screen and (max-width: 600px) {
+    footer {
+        a {
+            margin: 10px 20px 30px;
+        }
+    }   
+    
 }
 

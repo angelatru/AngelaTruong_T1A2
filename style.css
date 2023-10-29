@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap");
 * {
-  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
+  height: 100%;
 }
 
 h1 {
@@ -29,30 +33,108 @@ p, ul {
   font-size: 1.2em;
 }
 
-.contentContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
 }
 
 .navbar {
-  background-color: rgb(206, 231, 253);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .navLinks li {
   margin: 10px 30px;
 }
 
+@media screen and (max-width: 1000px) {
+  ul {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .navLinks {
+    flex-direction: column;
+  }
+  .navLinks li {
+    margin: 5px;
+  }
+}
+.indexContainer {
+  padding: 30px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#landingInfo p {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+#landingInfo h1 {
+  margin-bottom: -10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .indexContainer {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+  #landingInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #landingInfo h1 {
+    margin: -5px 0px;
+  }
+  #landingInfo p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #imgPortrait {
+    width: 500px;
+  }
+  #landingInfo h1 {
+    font-size: 2.5em;
+  }
+  #landingInfo p {
+    font-size: 1em;
+  }
+}
 #imgPortrait {
-  -webkit-clip-path: circle(35%);
-          clip-path: circle(35%);
+  max-width: 100%;
+  -webkit-clip-path: circle(37%);
+          clip-path: circle(37%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-top: 10px;
+}
+footer a {
+  margin: 20px 30px 60px;
+}
+
+@media screen and (max-width: 600px) {
+  footer a {
+    margin: 10px 20px 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
