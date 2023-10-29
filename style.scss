@@ -1,5 +1,88 @@
-$placeholder-color: red;
+// Unviersal styling
+* {
+    padding: 0;
+    margin: 0;
+}
+
+// Import fonts
+
+// Headings - Cormorant Upright (med, semibold, bold)
+    //font-family: 'Cormorant Upright', serif;
+// Body - Palanquin 
+    //font-family: 'Palanquin', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap');
+
+// Colour variables ----
+
+
+// Headings -----
+
+@mixin headingFont {
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 700;
+}
+
+@mixin bodyFont {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
 
 h1 {
-    color: $placeholder-color;
+    @include headingFont();
+    font-size: 3.5em;
 }
+
+h2 {
+    @include headingFont();
+    font-size: 2.5em;
+}
+
+h3 {
+    @include headingFont();
+    font-size: 2em;
+}
+
+p, ul {
+    @include bodyFont();
+}
+
+
+// Body elements  ----
+
+.contentContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Nav elements ----
+
+.navbar {
+    background-color: rgb(206, 231, 253);
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+        margin: 10px 30px;
+    }
+    
+}
+
+// Index HTML elements ----
+
+#imgPortrait {
+    clip-path: circle(35%);
+}
+
