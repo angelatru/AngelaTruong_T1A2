@@ -18,8 +18,8 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap');
 
-// Colour variables ----
-
+// Variables ----
+$contentMargin: 60px;
 
 // Headings -----
 
@@ -34,6 +34,20 @@ body {
     font-size: 1.2em;
 }
 
+@mixin mobileFonts {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+    }
+}
 
 h1 {
     @include headingFont();
@@ -43,11 +57,12 @@ h1 {
 h2 {
     @include headingFont();
     font-size: 2.5em;
+    text-align: center;
 }
 
 h3 {
     @include headingFont();
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 p, ul {
@@ -62,19 +77,27 @@ a {
 }
 
 .divider {
-    height: 2px;
-    background-color: red;
+    width: 40%;
+    margin: 0px auto;
+    height: 1px;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+.contentContainer {
+   width: 70%;
+   margin: 0px auto;
 }
 
 
 // Nav ----
 
 .navbar {
+    background-color: aliceblue;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 
 .navLinks {
@@ -153,12 +176,7 @@ a {
     }
 
     #landingInfo {
-        h1 {
-            font-size: 2.5em;
-        }
-        p{
-            font-size: 1em;
-        }
+        @include mobileFonts();
     }
 }
 
@@ -170,11 +188,31 @@ a {
 
 // About me ----
 
+#aboutContent {
+    p {
+        margin-top: -30px;
+    }
+}
+
+#filmFlower {
+    margin: -125px 0px;
+    width: 100%;
+    clip-path: polygon(100% 25%,100% 70%,0% 70%,0% 25%);
+}
 
 
 //About me mobile
+@media screen and (max-width: 1000px) {
+    #filmFlower {
+        margin: -100px 0px;
+    }
+}
 
-
+@media screen and (max-width: 600px) {
+    #aboutContent {
+        @include mobileFonts();
+    }
+}
 
 // Footer ----
 footer {
