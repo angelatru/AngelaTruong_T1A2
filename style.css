@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+.divider {
+  height: 2px;
+  background-color: red;
+}
+
 .navbar {
   overflow: hidden;
   display: flex;
