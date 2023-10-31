@@ -19,7 +19,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap');
 
 // Variables ----
-$contentMargin: 60px;
+
 
 // Headings -----
 
@@ -39,12 +39,12 @@ $contentMargin: 60px;
         font-size: 2.5em;
     }
     h2 {
-        font-size: 1em;
+        font-size: 2.2em;
     }
     h3 {
         font-size: 1.5em;
     }
-    p{
+    p, ul {
         font-size: 1em;
     }
 }
@@ -89,11 +89,16 @@ a {
    margin: 0px auto;
 }
 
+@media screen and (max-width: 600px) {
+    .contentContainer {
+        width: 80%;
+    }
+}
+
 
 // Nav ----
 
 .navbar {
-    background-color: aliceblue;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -114,7 +119,7 @@ a {
 
 // Nav mobile
 @media screen and (max-width: 1000px) {
-    ul {
+    .navLinks {
         font-size: 1em;
     }
 }
@@ -190,12 +195,12 @@ a {
 
 #aboutContent {
     p {
-        margin-top: -30px;
+        margin-top: -20px;
     }
 }
 
 #filmFlower {
-    margin: -125px 0px;
+    margin: -100px 0px;
     width: 100%;
     clip-path: polygon(100% 25%,100% 70%,0% 70%,0% 25%);
 }
@@ -204,7 +209,7 @@ a {
 //About me mobile
 @media screen and (max-width: 1000px) {
     #filmFlower {
-        margin: -100px 0px;
+        margin: -50px 0px;
     }
 }
 

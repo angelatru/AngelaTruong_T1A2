@@ -51,8 +51,12 @@ a {
   margin: 0px auto;
 }
 
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    width: 80%;
+  }
+}
 .navbar {
-  background-color: aliceblue;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -70,7 +74,7 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  ul {
+  .navLinks {
     font-size: 1em;
   }
 }
@@ -123,12 +127,12 @@ a {
     font-size: 2.5em;
   }
   #landingInfo h2 {
-    font-size: 1em;
+    font-size: 2.2em;
   }
   #landingInfo h3 {
     font-size: 1.5em;
   }
-  #landingInfo p {
+  #landingInfo p, #landingInfo ul {
     font-size: 1em;
   }
 }
@@ -139,11 +143,11 @@ a {
 }
 
 #aboutContent p {
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 #filmFlower {
-  margin: -125px 0px;
+  margin: -100px 0px;
   width: 100%;
   -webkit-clip-path: polygon(100% 25%, 100% 70%, 0% 70%, 0% 25%);
           clip-path: polygon(100% 25%, 100% 70%, 0% 70%, 0% 25%);
@@ -151,7 +155,7 @@ a {
 
 @media screen and (max-width: 1000px) {
   #filmFlower {
-    margin: -100px 0px;
+    margin: -50px 0px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -159,12 +163,12 @@ a {
     font-size: 2.5em;
   }
   #aboutContent h2 {
-    font-size: 1em;
+    font-size: 2.2em;
   }
   #aboutContent h3 {
     font-size: 1.5em;
   }
-  #aboutContent p {
+  #aboutContent p, #aboutContent ul {
     font-size: 1em;
   }
 }
