@@ -1,4 +1,4 @@
-// Unviersal styling -----
+// Unviersal styling -----------------------------
 * {
     box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ body {
     height: 100%;
 }
 
-// Import fonts ----
+// Import fonts ---------------------------------
 
 // Headings - Cormorant Upright (med, semibold, bold)
     //font-family: 'Cormorant Upright', serif;
@@ -18,10 +18,10 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap');
 
-// Variables ----
+// Variables ---------------------------------
 
 
-// Headings -----
+// Headings ----------------------------------
 
 @mixin headingFont {
     font-family: 'Cormorant Upright', serif;
@@ -65,12 +65,13 @@ h3 {
     font-size: 1.8em;
 }
 
+
 p, ul {
     @include bodyFont();
 }
 
 
-// Body  ----
+// Body  ---------------------------------
 
 a {
     text-decoration: none;
@@ -96,7 +97,7 @@ a {
 }
 
 
-// Nav ----
+// Nav ---------------------------------
 
 .navbar {
     overflow: hidden;
@@ -135,7 +136,7 @@ a {
     }
 }
 
-// Index ----
+// Index ---------------------------------
 
 .indexContainer {
     padding: 30px;
@@ -191,7 +192,7 @@ a {
     clip-path: circle(37%);
 }
 
-// About me ----
+// About me ---------------------------------
 
 #aboutContent {
     p {
@@ -219,7 +220,75 @@ a {
     }
 }
 
-// Footer ----
+// Experience ---------------------------------
+//Utilise CSS grids to justify space of experience content
+.experienceInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 4fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.experienceLinks {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .expBtn {
+        width: 40%;
+        height: 50%;
+        margin: 0px 20px;
+    }
+}
+
+
+.experienceStudy { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+
+.experienceSummary { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+// Experience mobile
+@media screen and (max-width: 1000px) {
+    .experienceInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(2, 2fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+        
+    .experienceLinks {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .experienceStudy {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .experienceSummary {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+}
+
+
+
+// Blog ---------------------------------
+
+
+
+// Connect ---------------------------------
+
+
+
+
+// Footer ---------------------------------
 footer {
     display: flex;
     flex-direction: column;
