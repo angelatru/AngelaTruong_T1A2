@@ -1,1 +1,27 @@
 @import "../../index";
+
+.connectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: $gridgap;
+    grid-row-gap: 0px;
+}
+    
+#connectInfo { grid-area: 1 / 1 / 2 / 2; }
+
+#connectForm { 
+    grid-area: 1 / 2 / 2 / 3; 
+    display: flex;
+
+    form {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.inputSmall {
+    min-height: 40px;
+}

@@ -1,1 +1,43 @@
 @import "../../index";
+
+// Blog post grid
+#cardGrid {
+    margin-top: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: $gridgap;
+    grid-row-gap: $gridgap;
+}
+    
+.blogCard1 { grid-area: 1 / 1 / 2 / 2; }
+.blogCard2 { grid-area: 1 / 2 / 2 / 3; }
+.blogCard3 { grid-area: 1 / 3 / 2 / 4; }
+.blogCard4 { grid-area: 2 / 1 / 3 / 2; }
+.blogCard5 { grid-area: 2 / 2 / 3 / 3; }
+.blogCard6 { grid-area: 2 / 3 / 3 / 4; }
+
+.post {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin: 10px;
+}
+
+@media screen and (max-width: $long) {
+    #cardGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: $gridgap;
+        grid-row-gap: $gridgap;
+    }
+        
+    .blogCard1 { grid-area: 1 / 1 / 2 / 2; }
+    .blogCard2 { grid-area: 1 / 2 / 2 / 3; }
+    .blogCard3 { grid-area: 2 / 2 / 3 / 3; }
+    .blogCard4 { grid-area: 2 / 1 / 3 / 2; }
+    .blogCard5 { grid-area: 3 / 1 / 4 / 2; }
+    .blogCard6 { grid-area: 3 / 2 / 4 / 3; }
+}

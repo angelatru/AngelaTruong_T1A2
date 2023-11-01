@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap');
+@import "../defaults/breakpoints";
 
 
 @mixin headingFont {
@@ -30,6 +31,9 @@
     h3 {
         font-size: 1.5em;
     }
+    h4 {
+        font-size: 1.2em;
+    }
     p, ul {
         font-size: 1em;
     }
@@ -51,7 +55,20 @@ h3 {
     font-size: 1.8em;
 }
 
+h4 {
+    @include headingFont();
+    font-size: 1.4em;
+}
+
 
 p, ul {
     @include bodyFont();
+}
+
+
+// Responsive font resizing
+@media screen and (max-width: $medium) {
+    .contentContainer {
+        @include mobileFonts();
+    }
 }

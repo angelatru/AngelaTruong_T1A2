@@ -6,6 +6,7 @@
     }
 }
 
+// Crop image
 #filmFlower {
     margin: -100px 0px;
     width: 100%;
@@ -20,8 +21,3 @@
     }
 }
 
-@media screen and (max-width: $medium) {
-    #aboutContent {
-        @include mobileFonts();
-    }
-}
