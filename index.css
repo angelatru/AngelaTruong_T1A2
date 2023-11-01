@@ -1,12 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap");
-* {
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap");
+h1 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 3.5em;
 }
 
-body {
-  margin: 0;
-  height: 100%;
+h2 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+p, ul {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 h1 {
@@ -34,28 +54,6 @@ p, ul {
   font-size: 1.2em;
 }
 
-a {
-  text-decoration: none;
-}
-
-.divider {
-  width: 40%;
-  margin: 0px auto;
-  height: 1px;
-  border-radius: 30px;
-  background-color: grey;
-}
-
-.contentContainer {
-  width: 70%;
-  margin: 0px auto;
-}
-
-@media screen and (max-width: 600px) {
-  .contentContainer {
-    width: 80%;
-  }
-}
 .navbar {
   overflow: hidden;
   display: flex;
@@ -86,62 +84,82 @@ a {
     margin: 5px;
   }
 }
-.indexContainer {
-  padding: 30px;
-  min-height: 80vh;
+h1 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+p, ul {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-
-#landingInfo p {
-  font-size: 1.4em;
+footer p {
+  font-size: 0.9em;
   font-weight: 400;
+  margin-top: 10px;
 }
-#landingInfo h1 {
-  margin-bottom: -10px;
+footer a {
+  margin: 20px 30px 60px;
 }
 
-@media screen and (max-width: 1000px) {
-  .indexContainer {
-    flex-direction: column;
-    padding: 50px 0px;
-  }
-  #landingInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #landingInfo h1 {
-    margin: -5px 0px;
-  }
-  #landingInfo p {
-    text-align: center;
-  }
-}
 @media screen and (max-width: 600px) {
-  #imgPortrait {
-    width: 500px;
-  }
-  #landingInfo h1 {
-    font-size: 2.5em;
-  }
-  #landingInfo h2 {
-    font-size: 2.2em;
-  }
-  #landingInfo h3 {
-    font-size: 1.5em;
-  }
-  #landingInfo p, #landingInfo ul {
-    font-size: 1em;
+  footer a {
+    margin: 10px 20px 30px;
   }
 }
-#imgPortrait {
-  max-width: 100%;
-  -webkit-clip-path: circle(37%);
-          clip-path: circle(37%);
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.divider {
+  width: 40%;
+  margin: 0px auto;
+  height: 1px;
+  border-radius: 30px;
+  background-color: grey;
+}
+
+.contentContainer {
+  width: 70%;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    width: 80%;
+  }
+}
 #aboutContent p {
   margin-top: -20px;
 }
@@ -216,25 +234,5 @@ a {
   }
   .experienceSummary {
     grid-area: 3/1/4/2;
-  }
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-footer p {
-  font-size: 0.9em;
-  font-weight: 400;
-  margin-top: 10px;
-}
-footer a {
-  margin: 20px 30px 60px;
-}
-
-@media screen and (max-width: 600px) {
-  footer a {
-    margin: 10px 20px 30px;
   }
 }/*# sourceMappingURL=index.css.map */

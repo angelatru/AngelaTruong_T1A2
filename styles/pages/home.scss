@@ -1,0 +1,55 @@
+@import "../../index";
+
+.indexContainer {
+    padding: 30px;
+    min-height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingInfo {
+    p {
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+    h1 {
+        margin-bottom: -10px;
+    }
+}
+
+// Index mobile
+@media screen and (max-width: $long) {
+    .indexContainer{
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+    #landingInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: -5px 0px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: $medium) {
+    #imgPortrait {
+        width: 500px;
+    }
+
+    #landingInfo {
+        @include mobileFonts();
+    }
+}
+
+
+#imgPortrait {
+    max-width: 100%;
+    clip-path: circle(37%);
+}

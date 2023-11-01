@@ -1,0 +1,56 @@
+@import "../../index";
+
+.experienceInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 4fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.experienceLinks {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .expBtn {
+        width: 40%;
+        height: 50%;
+        margin: 0px 20px;
+    }
+}
+
+
+.experienceStudy { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+
+.experienceSummary { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+// Experience mobile
+@media screen and (max-width: $long) {
+    .experienceInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(2, 2fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+        
+    .experienceLinks {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .experienceStudy {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .experienceSummary {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+}

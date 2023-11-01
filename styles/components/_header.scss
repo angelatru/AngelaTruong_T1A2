@@ -1,0 +1,40 @@
+@import "../defaults/breakpoints";
+@import "../defaults/colors";
+@import "./fonts";
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        margin: 10px 30px;
+    }
+    
+}
+
+// Nav mobile
+@media screen and (max-width: $long) {
+    .navLinks {
+        font-size: 1em;
+    }
+}
+
+    // Nav column view when viewport is narrow
+@media screen and (max-width: 650px) {
+    .navLinks {
+        flex-direction: column;
+
+        li {
+            margin: 5px;
+        }
+    }
+}

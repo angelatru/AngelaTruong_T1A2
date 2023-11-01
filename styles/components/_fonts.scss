@@ -1,0 +1,57 @@
+// Headings - Cormorant Upright (med, semibold, bold)
+//font-family: 'Cormorant Upright', serif;
+
+// Body - Palanquin 
+//font-family: 'Palanquin', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap');
+
+
+@mixin headingFont {
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 700;
+}
+
+@mixin bodyFont {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+@mixin mobileFonts {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p, ul {
+        font-size: 1em;
+    }
+}
+
+h1 {
+    @include headingFont();
+    font-size: 3.5em;
+}
+
+h2 {
+    @include headingFont();
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h3 {
+    @include headingFont();
+    font-size: 1.8em;
+}
+
+
+p, ul {
+    @include bodyFont();
+}
