@@ -8,17 +8,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap');
 @import "../defaults/breakpoints";
+@import "../defaults/colors";
 
 
 @mixin headingFont {
     font-family: 'Cormorant Upright', serif;
     font-weight: 700;
+    color: $accent-red;
 }
 
 @mixin bodyFont {
     font-family: 'Palanquin', sans-serif;
     font-weight: 300;
     font-size: 1.2em;
+    color: $body;
 }
 
 @mixin mobileFonts {
@@ -63,6 +66,15 @@ h4 {
 
 p, ul {
     @include bodyFont();
+}
+
+::placeholder {
+    font-family: 'Palanquin', sans-serif;
+    color: #3d405b71;
+}
+
+.submit {
+    font-family: 'Palanquin', sans-serif;
 }
 
 

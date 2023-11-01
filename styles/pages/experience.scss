@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 4fr;
-    grid-column-gap: $grid-gap;
+    grid-column-gap: $gridgap;
     grid-row-gap: 0px;
 }
 
@@ -17,16 +17,17 @@
 }    
 
 .expBtn {
+    background-color: $cream;
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 40%;
     border-radius: 30px;
     margin: 0 30px;
-    background-color: aliceblue;
 
     h4 {
         margin-left: 10px;
+        color: $body-light;
     }
 }
 
@@ -53,7 +54,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr repeat(2, 2fr);
         grid-column-gap: 0px;
-        grid-row-gap: $grid-gap;
+        grid-row-gap: $gridgap;
     }
         
     .experienceLinks {

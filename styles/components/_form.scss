@@ -1,0 +1,48 @@
+@import "./fonts";
+@import "./utils";
+@import "../defaults/breakpoints";
+@import "../defaults/colors";
+
+@mixin formStyle() {
+    resize: none;
+    background-color: #f4f1de73;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    &:focus {
+        font-family: 'Palanquin', sans-serif;
+        outline: none;
+    }
+}
+
+form {
+    margin: auto;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSmall {
+    @include formStyle();
+    min-height: 40px;
+}
+
+.inputLarge {
+    @include formStyle();
+}
+
+.submit {
+    background-color: $accent-green;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+    padding: 10px 30px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $accent-dkgreen;
+    }
+}

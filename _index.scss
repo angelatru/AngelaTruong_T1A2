@@ -3,6 +3,8 @@
 @import "./styles/components/header";
 @import "./styles/components/footer";
 @import "./styles/components/utils";
+@import "./styles/components/form";
+@import "./styles/defaults/colors";
 
 * {
     box-sizing: border-box;
@@ -13,8 +15,16 @@ body {
     min-height: 100%;
 }
 
+b {
+    color: $accent-red
+}
+
 a {
     text-decoration: none;
+    color: $body-light;
+    &:visited {
+        color: $body-light;
+    }
 }
 
 .divider {
@@ -22,7 +32,7 @@ a {
     margin: 0px auto;
     height: 1px;
     border-radius: 30px;
-    background-color: grey;
+    background-color: $cream;
 }
 
 .contentContainer {

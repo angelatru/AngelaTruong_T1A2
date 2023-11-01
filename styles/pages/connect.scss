@@ -1,6 +1,7 @@
 @import "../../index";
 
 .connectGrid {
+    margin: 30px 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -13,15 +14,20 @@
 #connectForm { 
     grid-area: 1 / 2 / 2 / 3; 
     display: flex;
-
-    form {
-        margin: auto;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-    }
 }
 
-.inputSmall {
-    min-height: 40px;
+
+
+@media screen and (max-width: $long) {
+    .connectGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+        
+    #connectInfo { grid-area: 1 / 1 / 2 / 2; }
+    #connectForm { grid-area: 2 / 1 / 3 / 2; }
+    
 }
