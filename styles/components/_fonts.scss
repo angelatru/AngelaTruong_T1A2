@@ -68,14 +68,7 @@ p, ul {
     @include bodyFont();
 }
 
-::placeholder {
-    font-family: 'Palanquin', sans-serif;
-    color: #3d405b71;
-}
 
-.submit {
-    font-family: 'Palanquin', sans-serif;
-}
 
 
 // Responsive font resizing

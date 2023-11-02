@@ -1,12 +1,15 @@
 @import "../defaults/breakpoints";
 @import "../defaults/colors";
 @import "./fonts";
+@import "./utils";
 
 .navbar {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .navLinks {
@@ -15,11 +18,26 @@
     justify-content: center;
     align-items: center;
 
+    .active {
+        font-weight: 500;
+    }
+
     li {
         margin: 10px 30px;
+        a {
+            transition: $linktransition;
+
+            &:hover {
+                color: $accent-green;
+            }
+        }
     }
     
 }
+
+
+
+
 
 // Nav mobile
 @media screen and (max-width: $long) {

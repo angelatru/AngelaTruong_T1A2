@@ -5,14 +5,13 @@
 
 @mixin formStyle() {
     resize: none;
-    background-color: #f4f1de73;
+    background-color: $cream;
+    opacity: 0.5;
     border: none;
     border-radius: 5px;
     padding: 10px;
-    &:focus {
-        font-family: 'Palanquin', sans-serif;
-        outline: none;
-    }
+    font-family: 'Palanquin', sans-serif;
+    outline: none;
 }
 
 form {
@@ -31,7 +30,14 @@ form {
     @include formStyle();
 }
 
+::placeholder {
+    font-family: 'Palanquin', sans-serif;
+    color: $body-light;
+    opacity: 0.6;
+}
+
 .submit {
+    font-family: 'Palanquin', sans-serif;
     background-color: $accent-green;
     color: white;
     font-size: 1em;
@@ -40,6 +46,7 @@ form {
     border: none;
     margin: auto;
     padding: 10px 30px;
+    transition: $linktransition;
 
     &:hover {
         cursor: pointer;

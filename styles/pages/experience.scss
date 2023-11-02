@@ -24,11 +24,26 @@
     min-width: 40%;
     border-radius: 30px;
     margin: 0 30px;
+    transition: $linktransition;
 
     h4 {
         margin-left: 10px;
         color: $body-light;
+        transition: $linktransition;
     }
+
+    i {
+        transition: $linktransition;
+    }
+
+    &:hover {
+        background-color: rgb(247, 244, 225);
+        i, h4 {
+            color: $accent-green;
+        }
+        
+    }
+
 }
 
 

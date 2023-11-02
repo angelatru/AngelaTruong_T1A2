@@ -1,6 +1,7 @@
 @import "../defaults/breakpoints";
 @import "../defaults/colors";
 @import "./fonts";
+@import "./utils";
 
 footer {
     display: flex;
@@ -16,6 +17,10 @@ footer {
 
     a {
         margin: 20px 30px 60px;
+        transition: $linktransition;
+        &:hover {
+            color: $accent-green;
+        }
     }
 }
 
