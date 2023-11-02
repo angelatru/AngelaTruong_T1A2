@@ -22,15 +22,15 @@ In addition to these pages, the site is responsive for accessibility on various 
 
 ## Images:
 ### Wireframes:
-![Mobile wireframes](./img/md/wireframeph.png)
-![Web wireframe for home and about me](./img/md/wireframesample1.png)
-![Web wireframes for studies, writings, and connect](./img/md/wireframesample2.png)
-![Styleguide for heading and body fonts and site colours](./img/md/styleguide.png)
-![Sitemap](./img/md/T1A2_Sitemappng.jpg)
+![Mobile wireframes](./docs/wireframeph.png)
+![Web wireframe for home and about me](./docs/wireframesample1.png)
+![Web wireframes for studies, writings, and connect](./docs/wireframesample2.png)
+![Styleguide for heading and body fonts and site colours](./docs/styleguide.png)
+![Sitemap](./docs/T1A2_Sitemappng.jpg)
 
 ### Site Sample Screenshots:
-![Portfolio home screen/landing page](./img/md/ss01.png)
-![Portfolio experiences and services page](./img/md/ss02.png)
-![Portfolio connect page and form](./img/md/ss04.png)
-![Home page mobile view](./img/md/ss05.png)
-![Experience and services page mobile view sample](./img/md/ss06.png)
+![Portfolio home screen/landing page](./docs/ss01.png)
+![Portfolio experiences and services page](./docs/ss02.png)
+![Portfolio connect page and form](./docs/ss04.png)
+![Home page mobile view](./docs/ss05.png)
+![Experience and services page mobile view sample](./docs/ss06.png)
