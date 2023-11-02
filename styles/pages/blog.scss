@@ -23,6 +23,25 @@
     border-radius: 20px;
     padding: 20px 40px;
     margin: 10px;
+   
+}
+
+.arrow {
+    padding: 10px;
+    cursor: pointer;
+    transition: $linktransition;
+
+    i {
+        color: $accent-yellow;
+        transition: $linktransition;
+    }
+
+    &:hover {
+        i{
+            color: $accent-red;
+        }
+    }
+    
 }
 
 .blogBody {
@@ -50,4 +69,21 @@
     .blogCard4 { grid-area: 2 / 1 / 3 / 2; }
     .blogCard5 { grid-area: 3 / 1 / 4 / 2; }
     .blogCard6 { grid-area: 3 / 2 / 4 / 3; }
+}
+
+@media screen and (max-width: $medium) {
+    #cardGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: $gridgap;
+        grid-row-gap: $gridgap;
+    }
+        
+    .blogCard1 { grid-area: 1 / 1 / 2 / 2; }
+    .blogCard2 { grid-area: 2 / 1 / 3 / 2; }
+    .blogCard3 { grid-area: 3 / 1 / 4 / 2; }
+    .blogCard4 { grid-area: 4 / 1 / 5 / 2; }
+    .blogCard5 { grid-area: 5 / 1 / 6 / 2; }
+    .blogCard6 { grid-area: 6 / 1 / 7 / 2; }
 }
