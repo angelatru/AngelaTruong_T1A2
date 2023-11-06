@@ -12,11 +12,44 @@
     p {
         font-size: 1.4em;
         font-weight: 400;
+        margin-bottom: 40px;
     }
     h1 {
         margin-bottom: -10px;
     }
 }
+
+.pagelinks {
+    @include headingFont();
+    font-size: 1.4em;
+    
+    a {
+        @include button();
+        margin-right: 10px;   
+    }
+
+    .homeService {
+        background-color: $accent-green;
+        color: white;
+        transition: $linktransition;
+        
+        &:hover {
+            background-color: $accent-dkgreen;
+        }
+    }
+
+    .homeLearnmore {
+        border-color: $accent-green;
+        color: $accent-green;
+        transition: $linktransition;
+
+        &:hover {
+            color: $accent-dkgreen;
+        }
+        
+    }
+}
+
 
 // Index mobile
 @media screen and (max-width: $long) {
@@ -39,6 +72,14 @@
 }
 
 @media screen and (max-width: $medium) {
+    .pagelinks {
+        font-size: 1.2em;
+        
+        a {
+            margin: auto;
+        }
+    }
+
     #imgPortrait {
         width: 500px;
     }

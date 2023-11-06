@@ -1,2 +1,8 @@
 $gridgap: 20px;
 $linktransition: 0.3s;
+
+@mixin button() {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+}

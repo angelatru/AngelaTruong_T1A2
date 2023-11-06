@@ -37,15 +37,13 @@ form {
 }
 
 .submit {
+    @include button();
+    margin: auto;
     font-family: 'Palanquin', sans-serif;
     background-color: $accent-green;
     color: white;
     font-size: 1em;
     font-weight: 500;
-    border-radius: 20px;
-    border: none;
-    margin: auto;
-    padding: 10px 30px;
     transition: $linktransition;
 
     &:hover {
